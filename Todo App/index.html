@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b80f0aea8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="list">
+            <span class="default">No task to display!</span>
+        </div>
+
+        <div class="actions">
+            <input type="text" placeholder="Enter task">
+            <div class="btns">
+                <div class="action add" id="add_btn" onclick="addTask()">
+                    <div class="text">Add</div><i class="fas fa-plus"></i>
+                </div>
+                <div class="action clear" id="clear_btn" onclick="clearList()">
+                    <div class="text">Clear</div><i class="fas fa-trash-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error messages -->
+        <span class="msg task_added"> <i class="fas fa-check-circle"></i> Task Added</span>
+        <span class="msg list_cleared"> <i class="fas fa-trash"></i> List Cleared</span>
+        <span class="msg input_err"> <i class="fa-light fa-exclamation"></i> No input!</span>
+        <span class="msg list_err"> <i class="fa-light fa-exclamation"></i> Empty List!</span>
+        <!-- Error messages End -->
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
